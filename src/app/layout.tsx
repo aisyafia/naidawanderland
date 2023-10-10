@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Naida Wanderland",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className="relative">
         <Navbar />
         <div className="max-w-6xl mx-auto">{children}</div>
+        <Footer />
       </body>
     </html>
   );

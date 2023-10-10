@@ -192,3 +192,7 @@ a {
   @apply mt-16 flex justify-center items-center flex-col gap-2;
 }
 /* END: Home styles */
+
+.footer__links {
+  @apply flex-1 w-full flex md:justify-end flex-wrap max-md:mt-10 gap-20;
+}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Hero from "@/components/Hero";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -43,8 +44,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full min-h-screen relative">
-          <div className="px-3 z-100 bg-discovery-bg">
+        <div className="w-full min-h-screen my-8 relative">
+          <div className="px-3 z-100">
             <div className="font-lulo text-2xl sm:text-4xl md:text-6xl pt-4">
               Explore the underwater beauty of Indonesia
             </div>
@@ -56,6 +57,14 @@ export default function Home() {
             width={2500}
             height={1668}
           />
+        </div>
+        <div className="font-lulo text-xl mb-4 sm:text-2xl md:text-4xl pt-4">
+          Discover our dive trip destinations
+        </div>
+        <div>
+          <Link href="/services">
+            <button className="custom-btn border-2">Trip Destinations</button>
+          </Link>
         </div>
       </div>
     </main>
