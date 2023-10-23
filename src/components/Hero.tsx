@@ -13,12 +13,12 @@ const Hero = () => {
       </div>
 
       <div className="hero__image-container">
-        <div className="hero__image rounded-xl">
+        <div className="hero__image rounded-xl overflow-hidden">
           <Image
             src="/hero-background.JPG"
             alt="Hero Background"
             fill
-            className="object-contain"
+            className="object-cover"
           />
         </div>
       </div>
